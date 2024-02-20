@@ -9,7 +9,7 @@
 
 #include "main.h" // Can be replaced by stm32xxxx_hal.h
 
-typedef struct i2c_mux_t {
+typedef struct i2c_mux {
 	I2C_HandleTypeDef* hi2c;	// I2C bus controller
 	GPIO_TypeDef* rst_port;		// Reset pin GPIO port (set NULL if unused)
 	uint16_t rst_pin;		// Reset pin bitmask
